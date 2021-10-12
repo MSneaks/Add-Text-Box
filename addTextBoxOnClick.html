@@ -1,0 +1,24 @@
+  <div class="col-md-6 mx-auto" id="insertHere">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Enter text Here">
+    </div>
+  </div>
+  
+ <div class="d-flex justify-content-center">
+    <button id="addUser" class="btn btn-dark" onclick="addTextBox()">Add text box</button>
+ </div>
+
+
+
+<script>
+  function addTextBox()
+  {
+    var insertArea = document.getElementById('insertHere');
+    var newTextBoxID = document.createElement("input");
+    newTextBoxID.type = "text";
+    newTextBoxID.name = "add";
+    newTextBoxID.placeholder="Enter text Here"
+    newTextBoxID.className="form-control";
+    insertArea.appendChild(newTextBoxID);
+  }
+</script>
